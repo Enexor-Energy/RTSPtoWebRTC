@@ -10,17 +10,10 @@ let config = {
 const pc = new RTCPeerConnection(config);
 pc.onnegotiationneeded = handleNegotiationNeededEvent;
 
-let log = msg => {
-  document.getElementById('div').innerHTML += msg + '<br>'
-}
-
 pc.ontrack = function(event) {
   stream.addTrack(event.track);
   videoElem.srcObject = stream;
-  log(event.streams.length + ' track is delivered')
 }
-
-pc.oniceconnectionstatechange = e => log(pc.iceConnectionState)
 
 async function handleNegotiationNeededEvent() {
   let offer = await pc.createOffer();
