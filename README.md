@@ -1,20 +1,8 @@
 # RTSPtoWebRTC
 
-RTSP Stream to WebBrowser over WebRTC based on Pion (full native! not using ffmpeg or gstreamer).
-
-**Note:** [RTSPtoWeb](https://github.com/deepch/RTSPtoWeb) is an improved service that provides the same functionality, an improved API, and supports even more protocols. *RTSPtoWeb is recommended over using this service.*
-
-
-if you need RTSPtoWSMP4f use https://github.com/deepch/RTSPtoWSMP4f
-
-
-![RTSPtoWebRTC image](doc/demo4.png)
-
-### Download Source
-
 1. Download source
    ```bash 
-   $ git clone https://github.com/deepch/RTSPtoWebRTC  
+   $ git clone https://github.com/Enexor-Energy/RTSPtoWebRTC.git  
    ```
 3. CD to Directory
    ```bash
@@ -57,33 +45,10 @@ format:
 }
 ```
 
-## Livestreams
-
-Use option ``` "on_demand": false ``` otherwise you will get choppy jerky streams and performance issues when multiple clients connect. 
-
-## Limitations
-
-Video Codecs Supported: H264
-
-Audio Codecs Supported: pcm alaw and pcm mulaw 
-
 ## Team
 
 Deepch - https://github.com/deepch streaming developer
 
 Dmitry - https://github.com/vdalex25 web developer
-
-Now test work on (chrome, safari, firefox) no MAC OS
-
-## Other Example
-
-Examples of working with video on golang
-
-- [RTSPtoWeb](https://github.com/deepch/RTSPtoWeb)
-- [RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC)
-- [RTSPtoWSMP4f](https://github.com/deepch/RTSPtoWSMP4f)
-- [RTSPtoImage](https://github.com/deepch/RTSPtoImage)
-- [RTSPtoHLS](https://github.com/deepch/RTSPtoHLS)
-- [RTSPtoHLSLL](https://github.com/deepch/RTSPtoHLSLL)
 
 [![paypal.me/AndreySemochkin](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/AndreySemochkin) - You can make one-time donations via PayPal. I'll probably buy a ~~coffee~~ tea. :tea:
