@@ -10,7 +10,8 @@
    ```
 4. Test Run
    ```bash
-    $ GO111MODULE=on go run *.go
+    $ set GO111MODULE=on
+    $ go run .
    ```
 5. Open Browser
     ```bash
