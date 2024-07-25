@@ -7,26 +7,27 @@
 <script type="text/javascript" src="../../static/js/jquery-3.4.1.min.js"></script>
 <script src="../../static/js/bootstrap.min.js"></script>
 <script src="../../static/js/adapter-latest.js"></script>
-
-<div class="container">
-  <div class="row">
-      <div class="col">
-          <input type="hidden" name="suuid" id="suuid" value="{{ .suuid }}">
-          <input type="hidden" name="port" id="port" value="{{ .port }}">
-          <input type="hidden" id="localSessionDescription" readonly="true">
-          <input type="hidden" id="remoteSessionDescription">
-          <div id="remoteVideos">
-              <video style="width:800px" id="videoElem" autoplay muted controls></video>
-          </div>
-          <div class="row">
-            <div class="list-group list-group-horizontal justify-content-center" style="width: 75%;">
-              {{ range .suuidMap }}
-                <a style="width: 100px;" href="{{ . }}" id="{{ . }}" name="{{ . }}" class="list-group-item list-group-item-action">{{ . }}</a>
-              {{ end }}
+<body style="background-color: #d6dbe0;">
+  <div class="container" style="background-color: #d6dbe0; margin-top: 25px;">
+    <div class="row" style="background-color: #d6dbe0;">
+        <div class="col" style="background-color: #d6dbe0;">
+            <input type="hidden" name="suuid" id="suuid" value="{{ .suuid }}">
+            <input type="hidden" name="port" id="port" value="{{ .port }}">
+            <input type="hidden" id="localSessionDescription" readonly="true">
+            <input type="hidden" id="remoteSessionDescription">
+            <div id="remoteVideos" style="background-color: #d6dbe0;">
+                <video style="width:1110px; height: 720px;" id="videoElem" autoplay muted controls></video>
             </div>
-          </div>
+            <div class="row">
+              <div class="list-group list-group-horizontal justify-content-center" style="width: 100%;">
+                {{ range .suuidMap }}
+                  <a style="width: 150px; text-align: center;" href="{{ . }}" id="{{ . }}" name="{{ . }}" class="list-group-item list-group-item-action">{{ . }}</a>
+                {{ end }}
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
-</div>
-<script type="text/javascript" src="../../static/js/app.js?ver={{ .version }}"></script>
+  </div>
+  <script type="text/javascript" src="../../static/js/app.js?ver={{ .version }}"></script>
+<body>
 </html>

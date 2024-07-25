@@ -3,21 +3,21 @@
     "http_port": ":8083"
   },
   "streams": {
-    "Cam1": {
+    "Ignition": {
       "on_demand" : false,
-      "url": "rtsp://admin:fasterfaster1@172.17.1.60"
+      "url": "rtsp://admin:fasterfaster1@172.17.2.60"
     },
-    "Cam2": {
+    "Combustion": {
       "on_demand" : false,
-      "url": "rtsp://admin:fasterfaster1@172.17.1.60"
+      "url": "rtsp://admin:fasterfaster1@172.17.2.61"
     },
-    "Cam3": {
+    "Hot Gas Joint": {
       "on_demand" : false,
-      "url": "rtsp://admin:fasterfaster1@172.17.1.60"
+      "url": "rtsp://admin:fasterfaster1@172.17.2.62"
     },
-    "Cam4": {
+    "TPG": {
       "on_demand" : false,
-      "url": "rtsp://admin:fasterfaster1@172.17.1.60"
+      "url": "rtsp://admin:fasterfaster1@172.17.2.63"
     }
   }
 }
